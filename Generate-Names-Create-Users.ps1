@@ -1,12 +1,11 @@
- # ----- Edit these Variables for your own Use Case ----- #
-$PASSWORD_FOR_USERS   = "Password1"
-$NUMBER_OF_ACCOUNTS_TO_CREATE = 10000
-# ------------------------------------------------------ #
+ 
+$PASSWORD_FOR_USERS   = "Menenga1"
+$NUMBER_OF_ACCOUNTS_TO_CREATE = 21
 
 Function generate-random-name() {
     $consonants = @('b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z')
-    $vowels = @('a','e','i','o','u','y')
-    $nameLength = Get-Random -Minimum 3 -Maximum 7
+    $vowels = @('a','e','i','o','u')
+    $nameLength = Get-Random -Minimum 7 -Maximum 7
     $count = 0
     $name = ""
 
